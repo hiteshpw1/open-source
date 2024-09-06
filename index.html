@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Learn About open source</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function loadPage(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => document.getElementById('content').innerHTML = data)
+                .catch(error => console.error('Error loading page:', error));
+        }
+    </script>
+
 </head>
 <body>
-    Learn to make a pull request
+   
+
+   <!-- <iframe src="footer.html" width="600" height="400"></iframe> -->
+
+
+<h1 class="text-3xl text-blue-700 hover:text-red-500"> Learn to make a pull request </h1>
+<nav>
+    <ul>
+        <li><a class="underline underline-offset-" href="#" onclick="loadPage('footer.html')">click here to join </a></li>
+
+    </ul>
+</nav>
+<div id="content">
+    <!-- Content from other pages will be loaded here -->
+</div>
 </body>
+</html>
 </html>
