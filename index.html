@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Learn About open source</title>
-</head>
-<body>
-    Learn to make a pull request
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn About Open Source</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        animation: fadeIn 1s ease-in;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .features {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #2d3436;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .feature-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #0066cc;
+      }
+
+      .feature-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #2d3436;
+      }
+
+      .feature-text {
+        color: #666;
+      }
+
+      .cta-section {
+        background: #0066cc;
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: white;
+        color: #0066cc;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .cta-button:hover {
+        transform: scale(1.05);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2rem;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Learn to Contribute to Open Source</h1>
+      <p class="hero-subtitle">
+        Start your journey into open source development and make meaningful
+        contributions to projects worldwide
+      </p>
+    </header>
+
+    <section class="features">
+      <h2 class="section-title">Getting Started</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Find Projects</h3>
+          <p class="feature-text">
+            Discover beginner-friendly projects and issues tagged with "good
+            first issue" on GitHub.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔀</div>
+          <h3 class="feature-title">Fork & Clone</h3>
+          <p class="feature-text">
+            Learn how to fork repositories and clone them to your local machine.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👾</div>
+          <h3 class="feature-title">Make Changes</h3>
+          <p class="feature-text">
+            Create a new branch and make your changes following the project's
+            guidelines.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Pull Request</h3>
+          <p class="feature-text">
+            Submit your changes through a pull request and engage with the
+            community.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Start Contributing?</h2>
+      <p>Join millions of developers in the open source community</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+  </body>
 </html>
