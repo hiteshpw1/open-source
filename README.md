@@ -1,2 +1,2 @@
 # open-source
-A test repo to learn Pull request
+A test repository to learn Pull requests easily.
