@@ -1,0 +1,66 @@
+:root{
+	--bg1:#0f172a;
+	--bg2:#0b1220;
+	--accent:#7c3aed;
+	--muted:rgba(255,255,255,0.75);
+}
+
+*{box-sizing:border-box}
+
+html,body{height:100%;margin:0}
+
+body{
+	font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial;
+	background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);
+	color:#fff;
+	-webkit-font-smoothing:antialiased;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	min-height:100vh;
+	padding:2rem;
+	gap:2rem;
+}
+
+.container{
+	width:100%;
+	max-width:1000px;
+	background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));
+	border:1px solid rgba(255,255,255,0.06);
+	border-radius:16px;
+	padding:2.5rem;
+	box-shadow:0 10px 30px rgba(2,6,23,0.6),inset 0 1px 0 rgba(255,255,255,0.02);
+	backdrop-filter:blur(6px) saturate(120%);
+}
+
+h1{margin:0 0 .5rem 0;font-size:clamp(1.6rem,3.2vw,2.6rem);letter-spacing:-0.02em;color:#fff}
+
+p{margin:0 0 1rem 0;color:var(--muted);font-size:1rem;line-height:1.5}
+
+nav{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+
+nav a{color:var(--muted);text-decoration:none;padding:.5rem .9rem;border-radius:999px;transition:all .22s ease;font-weight:600;background:transparent;border:1px solid transparent}
+
+nav a:hover{color:#fff;transform:translateY(-3px);box-shadow:0 6px 18px rgba(124,58,237,0.16);background:linear-gradient(90deg,rgba(124,58,237,0.12),rgba(124,58,237,0.04));border-color:rgba(124,58,237,0.18)}
+
+.header-actions{display:flex;gap:.75rem;justify-content:center;margin-top:1rem}
+
+.heading{
+    font-size: larger;
+}
+
+.btn{padding:.65rem 1rem;border-radius:10px;font-weight:700;background:linear-gradient(90deg,var(--accent),#4f46e5);color:#fff;border:none;cursor:pointer;box-shadow:0 8px 24px rgba(79,70,229,0.18);transition:transform .18s ease,box-shadow .18s ease}
+
+.btn:active{transform:translateY(1px);box-shadow:0 6px 18px rgba(79,70,229,0.12)}
+
+.footer{margin-top:1.25rem;color:rgba(255,255,255,0.5);font-size:.9rem}
+
+img,iframe,.logo{display:block;max-width:100%;height:auto;margin:0 auto;border-radius:12px}
+
+ul,ol{padding-left:0;list-style:none;margin:0;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
+
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;padding:1rem;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(2,6,23,0.5)}
+
+@media (max-width:600px){body{padding:1.2rem}.container{padding:1.25rem;border-radius:12px}nav a{padding:.45rem .65rem}}
+
